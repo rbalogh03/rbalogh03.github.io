@@ -216,18 +216,30 @@ form.addEventListener('submit', async function (e) {
 // Dark mode functionality
 function initDarkMode() {
     const darkModeToggle = document.getElementById('darkModeToggle');
+    const darkModeToggleMobile = document.getElementById('darkModeToggleMobile');
+    const darkModeToggleText = document.getElementById('darkModeToggleText');
     const html = document.documentElement;
     
     // Check for saved dark mode preference
     if (localStorage.getItem('darkMode') === 'true' || 
-        (!localStorage.getItem('darkMode') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    (!localStorage.getItem('darkMode') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
         html.classList.add('dark');
     }
-
-    // Toggle dark mode
-    darkModeToggle.addEventListener('click', () => {
+    
+    darkModeToggleText.textContent = html.classList.contains('dark') ? 'Világos mód' : 'Sötét mód';
+    // Toggle dark mode function
+    const toggleDarkMode = () => {
         html.classList.toggle('dark');
         localStorage.setItem('darkMode', html.classList.contains('dark'));
+        darkModeToggleText.textContent = html.classList.contains('dark') ? 'Világos mód' : 'Sötét mód';
+    };
+
+    // Desktop toggle
+    darkModeToggle.addEventListener('click', toggleDarkMode);
+    
+    // Mobile toggle
+    darkModeToggleMobile.addEventListener('click', () => {
+        toggleDarkMode();
     });
 }
 
