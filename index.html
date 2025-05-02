@@ -3,6 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Conilex – Prémium webalkalmazás-tesztelés startupoknak és KKV-knak. Gyors QA audit, átlátható hibajegyzék, magyar nyelvű támogatás.">
+    <meta name="keywords" content="QA tesztelés, webes tesztelés, minőségbiztosítás, audit, hibajegyzék, szoftvertesztelés, startup QA, KKV QA, Conilex">
+    <meta name="author" content="Conilex">
+    <!-- Open Graph (Facebook, LinkedIn) -->
+    <meta property="og:title" content="Conilex – Tesztelés. Gyorsan, pontosan." />
+    <meta property="og:description" content="Gyors és emberi nyelvű QA tesztelés startupoknak és KKV-knak. Buglista, audit, PageSpeed, megbízhatóság.">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rbalogh03.github.io/" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <title>Conilex – Tesztelés. Gyorsan, pontosan.</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -10,6 +19,46 @@
         scroll-behavior: smooth;
       }
     </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Mikor érdemes minket bevonni?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Akkor, ha új funkciókat vezetsz be, vagy a weboldalad közel áll az élesítéshez. Egy QA audit segít elkerülni a kritikus hibákat, még mielőtt a látogatók megérkeznének."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Mit kapok pontosan egy audit után?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Egy részletes hibajegyzéket screenshotokkal, súlyozással (kritikus / közepes / kisebb), valamint javaslatokat UX-re, sebességre és keresőoptimalizálásra. Átlátható, érthető formában."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Nem vagyok technikai. Érteni fogom?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Igen. Minden megjegyzést közérthető nyelvezettel készítünk, és segítünk megérteni, mi miért fontos. A cél az, hogy technikai háttértudás nélkül is dönteni tudj."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Mennyi idő alatt dolgoztok?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Audit csomag esetén 48–72 órán belül szállítunk. QA partnerként heti rendszerességű tesztelést végzünk, előre egyeztetett időpontban, a sprintfolyamatodhoz igazítva."
+            }
+          }
+        ]
+      }
+    </script>      
   </head>
   <body class="bg-white text-gray-900 scroll-smooth">
     <!-- Sticky Topbar -->
@@ -18,9 +67,8 @@
         <div class="text-xl font-semibold">Conilex</div>
         <nav class="space-x-6 hidden md:flex items-center">
           <a href="#miert" class="hover:text-gray-600">Miért mi?</a>
-          <a href="#csomagok" class="hover:text-gray-600">Csomagok</a>
+          <a href="#csomagok" class="hover:text-gray-600">Csomagjaink</a>
           <a href="#gyik" class="hover:text-gray-600">GYIK</a>
-          <a href="#kapcsolat" class="hover:text-gray-600">Kapcsolat</a>
           <a href="#kapcsolat" class="inline-block ml-4 px-4 py-2 bg-gray-900 text-white rounded hover:bg-gray-700">Ajánlatkérés</a>
         </nav>
         <!-- Hamburger -->
@@ -38,96 +86,155 @@
           </svg>
         </button>
         <a href="#miert" class="mobile-link">Miért mi?</a>
-        <a href="#csomagok" class="mobile-link">Csomagok</a>
+        <a href="#csomagok" class="mobile-link">Csomagjaink</a>
         <a href="#gyik" class="mobile-link">GYIK</a>
-        <a href="#kapcsolat" class="mobile-link">Kapcsolat</a>
+        <a href="#kapcsolat" class="mobile-link inline-block ml-4 px-4 py-2 bg-gray-900 text-white rounded hover:bg-gray-700">Ajánlatkérés</a>
       </div>
     </header>
 
     <!-- Hero Section -->
     <section class="py-24 px-4 text-center" id="hero">
-      <h1 class="text-4xl md:text-6xl font-bold mb-6">Tesztelés. Gyorsan, pontosan, emberi nyelven.</h1>
+      <p class="text-sm uppercase tracking-wide text-gray-500 mb-2">Független QA audit</p>
+      <h1 class="text-4xl md:text-6xl font-bold mb-6">Tesztelés. Gyorsan, precízen, emberi nyelven.</h1>
       <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">Minőségbiztosítás kisvállalkozásoknak, startupoknak és fejlesztői csapatoknak.</p>
       <div class="flex flex-col md:flex-row justify-center items-center gap-4">
-        <a href="#csomagok" class="px-6 py-3 bg-gray-900 text-white rounded hover:bg-gray-700">Csomagok megtekintése</a>
-        <a href="#kapcsolat" class="px-6 py-3 border border-gray-900 rounded hover:bg-gray-100">Ajánlatkérés most</a>
+        <a href="#csomagok" class="px-6 py-3 bg-gray-900 text-white rounded hover:bg-gray-700">Csomagjaink megtekintése</a>
+        <a href="#kapcsolat" class="px-6 py-3 border border-gray-900 rounded hover:bg-gray-100">Kérj auditot most</a>
       </div>
     </section>
 
     <!-- USP Section -->
     <section id="miert" class="scroll-mt-10 py-20 bg-gray-50 px-4">
       <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-10 text-center">
+        
         <div>
-          <h3 class="text-xl font-semibold mb-2">Valódi QA-szemlélet</h3>
-          <p>Nem csak végigkattintunk. Dokumentálunk, priorizálunk, javaslunk.</p>
+          <h3 class="text-xl font-semibold mb-2">Nem csak végigkattintunk</h3>
+          <p>Valódi QA-szemlélettel tesztelünk: megértjük a folyamatokat, priorizálunk, és javaslatokat is adunk.</p>
         </div>
+    
         <div>
-          <h3 class="text-xl font-semibold mb-2">Gyors, strukturált szállítás</h3>
-          <p>Hibák képernyőképpel, súlyozással – átláthatóan tálalva.</p>
-        </div>
+          <h3 class="text-xl font-semibold mb-2">Gyors, érthető visszajelzés</h3>
+          <p>Képernyőképes hibalista, világos leírásokkal – a legfontosabb hibák kiemelve. Mindezt akár 48 órán belül.</p>
+        </div>        
+    
         <div>
-          <h3 class="text-xl font-semibold mb-2">Deploy előtt biztos kéz</h3>
-          <p>Nem a felhasználók tesztelnek – mi megtesszük helyettük.</p>
+          <h3 class="text-xl font-semibold mb-2">Ne a felhasználók teszteljenek</h3>
+          <p>Mi észrevesszük, amit ők is látnának – csak még időben. QA-szemmel, függetlenül.</p>
         </div>
+    
       </div>
     </section>
+    
 
     <!-- Pricing Section -->
-    <section id="csomagok" class="scroll-mt-10 py-24 px-4">
+    <section id="csomagok" class="scroll-mt-10 pt-24 px-4">
       <div class="max-w-6xl mx-auto text-center mb-16">
         <h2 class="text-3xl md:text-4xl font-bold mb-4">Csomagjaink</h2>
         <p class="text-gray-600">Válaszd ki, mire van szükséged most. A biztonságérzet ajándékba jár.</p>
       </div>
       <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
         <!-- Starter -->
-        <div class="border rounded-lg p-6 shadow hover:shadow-lg">
-          <h3 class="text-xl font-semibold mb-2">Indulásbiztos</h3>
+        <div class="border rounded-lg p-6 shadow hover:shadow-lg transition duration-200 cursor-pointer">
+          <h3 class="text-xl font-semibold mb-2">ReadyCheck</h3>
+          <p class="text-gray-600 mb-4 text-sm">Gyors ellenőrzés, hogy nyugodtan indulhass el – még mielőtt az első felhasználó megérkezne.</p>
           <p class="text-gray-500 mb-4">49 000 Ft</p>
           <ul class="text-left space-y-2 mb-6">
             <li>✔️ 3–4 kulcsfolyamat tesztelése</li>
             <li>✔️ Mobil és desktop nézet</li>
-            <li>✔️ Buglista screenshotokkal</li>
+            <li>✔️ Hibák listázása screenshotokkal</li>
             <li>✔️ Alap SEO/PageSpeed megjegyzések</li>
-            <li>✔️ 48 órás szállítás</li>
+            <li>✔️ Eredmény 48 órán belül</li>
           </ul>
-          <a href="#kapcsolat" class="block text-center px-4 py-2 bg-gray-900 text-white rounded hover:bg-gray-700">Rendelem ezt</a>
+          <a href="#kapcsolat" class="block text-center px-4 py-2 bg-gray-900 text-white rounded hover:bg-gray-700">Ajánlatot kérek</a>
         </div>
 
         <!-- Standard -->
-        <div class="border-2 border-gray-900 rounded-lg p-6 shadow-lg">
-          <h3 class="text-xl font-semibold mb-2">Rendbetesz</h3>
+        <div class="border-2 border-gray-900 rounded-lg p-6 shadow-lg transition duration-200 cursor-pointer">
+          <h3 class="text-xl font-semibold mb-2">DeepCheck</h3>
+          <p class="text-gray-600 mb-4 text-sm">Átfogó tesztelés élesítés előtt – hogy a látogatók az értéket lássák, ne a hibákat.</p>
           <p class="text-gray-500 mb-4">79 000 Ft</p>
           <ul class="text-left space-y-2 mb-6">
-            <li>✔️ 6–8 user flow + mellékfunkciók</li>
-            <li>✔️ Chrome + Firefox, mobil és desktop</li>
-            <li>✔️ Hibák bontása súly szerint</li>
+            <li>✔️ 6–8 kulcsfolyamat + mellékfunkciók</li>
+            <li>✔️ Multi-browser mobilon és desktopon</li>
+            <li>✔️ Hibák csoportosítása fontosság szerint</li>
             <li>✔️ UX javaslatok + SEO/PageSpeed audit</li>
-            <li>✔️ 72 órás szállítás</li>
+            <li>✔️ Eredmény 72 órán belül</li>
           </ul>
-          <a href="#kapcsolat" class="block text-center px-4 py-2 bg-gray-900 text-white rounded hover:bg-gray-700">Megrendelem</a>
+          <a href="#kapcsolat" class="block text-center px-4 py-2 bg-gray-900 text-white rounded hover:bg-gray-700">Ajánlatot kérek</a>
         </div>
 
         <!-- Partner -->
-        <div class="border rounded-lg p-6 shadow hover:shadow-lg">
+        <div class="border rounded-lg p-6 shadow hover:shadow-lg transition duration-200 cursor-pointer">
           <h3 class="text-xl font-semibold mb-2">QA Partner</h3>
+          <p class="text-gray-600 mb-4 text-sm">Folyamatos QA támogatás sprintjeidhez – hogy legyen, aki észreveszi a hibákat.</p>
           <p class="text-gray-500 mb-4">119 000 Ft-tól / hó</p>
           <ul class="text-left space-y-2 mb-6">
             <li>✔️ Heti regressziós tesztek</li>
             <li>✔️ Új fejlesztések validálása</li>
             <li>✔️ API-tesztelés</li>
-            <li>✔️ Bugok feltöltése saját felületre</li>
-            <li>✔️ Slack/email kapcsolattartás</li>
+            <li>✔️ Átlátható hibajegyzék minden hibáról</li>
+            <li>✔️ Kommunikáció a csapatod platformján</li>
           </ul>
           <a href="#kapcsolat" class="block text-center px-4 py-2 bg-gray-900 text-white rounded hover:bg-gray-700">Ajánlatot kérek</a>
         </div>
       </div>
     </section>
+    
+    <!-- Csomagjaink választás -->
+    <section class="mt-20 max-w-6xl mx-auto px-4" id="valasztas">
+      <h3 class="text-2xl font-bold text-center mb-10">Melyik csomag való neked?</h3>
+    
+      <div class="grid md:grid-cols-3 gap-6">
+    
+        <!-- ReadyCheck -->
+        <div class="rounded-lg p-6 border border-gray-200">
+          <h4 class="text-lg font-semibold mb-4 text-gray-900">ReadyCheck</h4>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 rounded-full bg-gray-200 text-sm text-gray-800">Most indulsz el</span>
+            <span class="px-3 py-1 rounded-full bg-gray-200 text-sm text-gray-800">Még senki nem nézte át az oldalad</span>
+            <span class="px-3 py-1 rounded-full bg-gray-200 text-sm text-gray-800">Gyors, precíz visszajelzést keresel</span>
+          </div>
+        </div>
+    
+        <!-- DeepCheck -->
+        <div class="rounded-lg p-6 border border-gray-200">
+          <h4 class="text-lg font-semibold mb-4 text-gray-900">DeepCheck</h4>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 rounded-full bg-gray-200 text-sm text-gray-800">Komplexebb weboldalad vagy appod van</span>
+            <span class="px-3 py-1 rounded-full bg-gray-200 text-sm text-gray-800">Élesítés előtt állsz, több funkcióval</span>
+            <span class="px-3 py-1 rounded-full bg-gray-200 text-sm text-gray-800">Fontos számodra a UX és a stabilitás</span>
+          </div>
+        </div>
+    
+        <!-- QA Partner – chips -->
+        <div class="rounded-lg p-6 border border-gray-200">
+          <h4 class="text-lg font-semibold mb-4 text-gray-900">QA Partner</h4>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 rounded-full bg-gray-200 text-sm text-gray-800">Fejlesztői sprintjeid vannak</span>
+            <span class="px-3 py-1 rounded-full bg-gray-200 text-sm text-gray-800">Nincs belső QA-d</span>
+            <span class="px-3 py-1 rounded-full bg-gray-200 text-sm text-gray-800">Folyamatos tesztelésre van szükséged</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="audit-peldak" class="scroll-mt-10 py-24 px-4">
+      <div class="max-w-3xl mx-auto text-center">
+        <h3 class="text-xl font-bold mb-4">QA audit példa</h3>
+        <p class="text-gray-600 mb-6">Szeretnéd látni, milyen egy valós audit? Megmutatjuk, hogyan dokumentáljuk a hibákat, és milyen formában kapsz visszajelzést.</p>
+        <a href="https://doc.clickup.com/90151126029/d/h/2kypu10d-1035/c2b4136f6bffd71" target="_blank" class="inline-block px-6 py-3 bg-gray-900 text-white rounded hover:bg-gray-700 transition">
+          Audit riport megtekintése
+        </a>
+      </div>
+    </section>
+    
 
 <!-- FAQ Section -->
 <section id="gyik" class="scroll-mt-10 py-24 px-4 bg-gray-50">
   <div class="max-w-4xl mx-auto">
     <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">GYIK</h2>
     <div class="space-y-4">
+
       <!-- FAQ 1 -->
       <div class="border rounded-lg">
         <button class="w-full flex justify-between items-center px-4 py-3 font-semibold hover:bg-gray-100 transition" data-toggle="faq1">
@@ -138,7 +245,7 @@
           </svg>
         </button>
         <div id="faq1" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-4 pb-0 text-gray-700">
-          Ha új funkciókat vezetsz be, élesítés előtt állsz, vagy szeretnél biztosra menni, hogy minden rendben működik.
+          Akkor, ha új funkciókat vezetsz be, vagy a weboldalad közel áll az élesítéshez. Egy QA audit segít elkerülni a kritikus hibákat, még mielőtt a látogatók megérkeznének.
         </div>
       </div>
 
@@ -152,7 +259,7 @@
           </svg>
         </button>
         <div id="faq2" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-4 pb-0 text-gray-700">
-          Strukturált hibajegyzéket képernyőképekkel, súlyozással, UX és PageSpeed megjegyzésekkel – könnyen értelmezhető formában.
+          Egy részletes hibajegyzéket screenshotokkal, hibák prioritás szerinti elosztásával, valamint javaslatokat UX-re, sebességre és keresőoptimalizálásra. Átlátható, érthető formában.
         </div>
       </div>
 
@@ -166,7 +273,7 @@
           </svg>
         </button>
         <div id="faq3" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-4 pb-0 text-gray-700">
-          Igen. Emberi nyelven írunk. Nemcsak azt mondjuk el, mi a gond, hanem azt is, miért fontos foglalkozni vele.
+          Igen. Minden megjegyzést közérthető nyelvezettel készítünk, és segítünk megérteni, mi miért fontos. A cél az, hogy technikai háttértudás nélkül is dönteni tudj.
         </div>
       </div>
 
@@ -180,13 +287,13 @@
           </svg>
         </button>
         <div id="faq4" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-4 pb-0 text-gray-700">
-          Audit csomagok: 48–72 óra. Partnerként heti sprinthez igazodva, megbízhatóan.
+          Audit csomag esetén 48–72 órán belül szállítunk. QA partnerként heti rendszerességű tesztelést végzünk, előre egyeztetett időpontban, a sprintfolyamatodhoz igazítva.
         </div>
       </div>
+
     </div>
   </div>
 </section>
-
 
 <!-- Contact Section -->
 <section id="kapcsolat" class="scroll-mt-10 py-24 px-4 bg-white border-t border-gray-100">
@@ -194,7 +301,14 @@
     <h2 class="text-3xl md:text-4xl font-bold mb-6">Kérdésed van vagy ajánlatot kérnél?</h2>
     <p class="text-gray-600 mb-10">Írj nekünk, és 1 munkanapon belül válaszolunk. Akár konkrét igénnyel, akár csak érdeklődésként is kereshetsz minket.</p>
     
-    <form class="space-y-6" novalidate>
+    <div class="mb-8 border border-gray-300 py-4 rounded-lg hover:outline-none hover:ring-2 hover:ring-gray-900 transition duration-200 cursor-pointer">
+      <p class="text-sm text-gray-500">Elérsz minket közvetlenül emailen is:</p>
+      <a href="mailto:conilex.qa@gmail.com" class="text-lg font-medium text-gray-900 underline underline-offset-2 hover:text-gray-600">
+        conilex.qa@gmail.com
+      </a>
+    </div>
+
+    <form class="space-y-6" novalidate id="contactForm" method="POST">
       <!-- Név -->
       <div>
         <label for="name" class="block text-left font-medium mb-1">Név</label>
@@ -241,12 +355,42 @@
 
       <!-- Gomb -->
       <div>
-        <button type="submit"
-                class="w-full md:w-auto px-6 py-3 bg-gray-900 text-white rounded hover:bg-gray-700 transition">
-          Üzenet elküldése
+        <button id="submitBtn" type="submit" class="w-full px-4 py-2 bg-gray-900 text-white rounded hover:bg-gray-700 flex items-center justify-center gap-2">
+          <svg id="spinner" class="w-5 h-5 animate-spin hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z"></path>
+          </svg>
+          <span id="submitText">Üzenet elküldése</span>
         </button>
       </div>
     </form>
+    <!-- Modal -->
+    <div id="successModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden px-4">
+      <div id="modalContent" class="bg-white p-6 rounded-lg shadow-lg text-center max-w-sm w-full transform scale-95 opacity-0 transition-all duration-300">
+        <h3 class="text-lg font-semibold mb-2">Üzenet elküldve!</h3>
+        <p class="text-gray-600 mb-4">Hamarosan válaszolunk, köszönjük a megkeresést.</p>
+        <button onclick="closeModal()" class="mt-2 px-4 py-2 bg-gray-900 text-white rounded hover:bg-gray-700">
+          Bezárás
+        </button>
+      </div>
+    </div>
+    <!-- Error Modal -->
+<div id="errorModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden px-4">
+  <div class="bg-white p-6 rounded-lg shadow-lg text-center max-w-sm w-full">
+    <h3 class="text-lg font-semibold mb-2 text-red-600">Sikertelen küldés!</h3>
+    <p class="text-gray-700 mb-2">
+      Valamilyen hiba<sup>*</sup> történt a küldés során.<br>
+      Kérlek vedd fel velünk a kapcsolatot emailen keresztül:<br>
+      <a href="mailto:conilex.qa@gmail.com" class="text-gray-700 underline">conilex.qa@gmail.com</a>
+    </p>
+    <p class="text-xs text-gray-400 mt-4 italic">* Nyugi, nem bug, hanem feature.</p>
+    <button onclick="closeErrorModal()" class="mt-4 px-4 py-2 bg-gray-900 text-white rounded hover:bg-gray-700">
+      Bezárás
+    </button>
+  </div>
+</div>
+    
+
   </div>
 </section>
 
@@ -263,7 +407,7 @@
     <!-- Középső rész: navigáció -->
     <div class="flex space-x-6">
       <a href="#miert" class="hover:text-gray-800">Miért mi?</a>
-      <a href="#csomagok" class="hover:text-gray-800">Csomagok</a>
+      <a href="#csomagok" class="hover:text-gray-800">Csomagjaink</a>
       <a href="#gyik" class="hover:text-gray-800">GYIK</a>
       <a href="#kapcsolat" class="hover:text-gray-800">Kapcsolat</a>
     </div>
