@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conilex – Tesztelés. Gyorsan, pontosan.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-900 scroll-smooth">
+    <!-- Sticky Topbar -->
+    <header class="sticky top-0 z-50 bg-white border-b border-gray-200">
+      <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+        <div class="text-xl font-semibold">Conilex</div>
+        <nav class="space-x-6 hidden md:flex items-center">
+          <a href="#miert" class="hover:text-gray-600">Miért mi?</a>
+          <a href="#csomagok" class="hover:text-gray-600">Csomagok</a>
+          <a href="#gyik" class="hover:text-gray-600">GYIK</a>
+          <a href="#kapcsolat" class="hover:text-gray-600">Kapcsolat</a>
+          <a href="#kapcsolat" class="inline-block ml-4 px-4 py-2 bg-gray-900 text-white rounded hover:bg-gray-700">Ajánlatkérés</a>
+        </nav>
+        <!-- Hamburger -->
+        <button id="hamburger" class="md:hidden focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+      <!-- Mobile Menu -->
+      <div id="mobileMenu" class="md:hidden fixed inset-0 bg-white z-40 flex flex-col items-center justify-center space-y-6 text-lg font-medium transform translate-x-full transition-transform">
+        <button id="closeMenu" class="absolute top-6 right-6">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+        <a href="#miert" class="mobile-link">Miért mi?</a>
+        <a href="#csomagok" class="mobile-link">Csomagok</a>
+        <a href="#gyik" class="mobile-link">GYIK</a>
+        <a href="#kapcsolat" class="mobile-link">Kapcsolat</a>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-24 px-4 text-center" id="hero">
+      <h1 class="text-4xl md:text-6xl font-bold mb-6">Tesztelés. Gyorsan, pontosan, emberi nyelven.</h1>
+      <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">Minőségbiztosítás kisvállalkozásoknak, startupoknak és fejlesztői csapatoknak.</p>
+      <div class="flex flex-col md:flex-row justify-center items-center gap-4">
+        <a href="#csomagok" class="px-6 py-3 bg-gray-900 text-white rounded hover:bg-gray-700">Csomagok megtekintése</a>
+        <a href="#kapcsolat" class="px-6 py-3 border border-gray-900 rounded hover:bg-gray-100">Ajánlatkérés most</a>
+      </div>
+    </section>
+
+    <!-- USP Section -->
+    <section id="miert" class="scroll-mt-10 py-20 bg-gray-50 px-4">
+      <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-10 text-center">
+        <div>
+          <h3 class="text-xl font-semibold mb-2">Valódi QA-szemlélet</h3>
+          <p>Nem csak végigkattintunk. Dokumentálunk, priorizálunk, javaslunk.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-2">Gyors, strukturált szállítás</h3>
+          <p>Hibák képernyőképpel, súlyozással – átláthatóan tálalva.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-2">Deploy előtt biztos kéz</h3>
+          <p>Nem a felhasználók tesztelnek – mi megtesszük helyettük.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="csomagok" class="scroll-mt-10 py-24 px-4">
+      <div class="max-w-6xl mx-auto text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Csomagjaink</h2>
+        <p class="text-gray-600">Válaszd ki, mire van szükséged most. A biztonságérzet ajándékba jár.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <!-- Starter -->
+        <div class="border rounded-lg p-6 shadow hover:shadow-lg">
+          <h3 class="text-xl font-semibold mb-2">Indulásbiztos</h3>
+          <p class="text-gray-500 mb-4">49 000 Ft</p>
+          <ul class="text-left space-y-2 mb-6">
+            <li>✔️ 3–4 kulcsfolyamat tesztelése</li>
+            <li>✔️ Mobil és desktop nézet</li>
+            <li>✔️ Buglista screenshotokkal</li>
+            <li>✔️ Alap SEO/PageSpeed megjegyzések</li>
+            <li>✔️ 48 órás szállítás</li>
+          </ul>
+          <a href="#kapcsolat" class="block text-center px-4 py-2 bg-gray-900 text-white rounded hover:bg-gray-700">Rendelem ezt</a>
+        </div>
+
+        <!-- Standard -->
+        <div class="border-2 border-gray-900 rounded-lg p-6 shadow-lg">
+          <h3 class="text-xl font-semibold mb-2">Rendbetesz</h3>
+          <p class="text-gray-500 mb-4">79 000 Ft</p>
+          <ul class="text-left space-y-2 mb-6">
+            <li>✔️ 6–8 user flow + mellékfunkciók</li>
+            <li>✔️ Chrome + Firefox, mobil és desktop</li>
+            <li>✔️ Hibák bontása súly szerint</li>
+            <li>✔️ UX javaslatok + SEO/PageSpeed audit</li>
+            <li>✔️ 72 órás szállítás</li>
+          </ul>
+          <a href="#kapcsolat" class="block text-center px-4 py-2 bg-gray-900 text-white rounded hover:bg-gray-700">Megrendelem</a>
+        </div>
+
+        <!-- Partner -->
+        <div class="border rounded-lg p-6 shadow hover:shadow-lg">
+          <h3 class="text-xl font-semibold mb-2">QA Partner</h3>
+          <p class="text-gray-500 mb-4">119 000 Ft-tól / hó</p>
+          <ul class="text-left space-y-2 mb-6">
+            <li>✔️ Heti regressziós tesztek</li>
+            <li>✔️ Új fejlesztések validálása</li>
+            <li>✔️ API-tesztelés</li>
+            <li>✔️ Bugok feltöltése saját felületre</li>
+            <li>✔️ Slack/email kapcsolattartás</li>
+          </ul>
+          <a href="#kapcsolat" class="block text-center px-4 py-2 bg-gray-900 text-white rounded hover:bg-gray-700">Ajánlatot kérek</a>
+        </div>
+      </div>
+    </section>
+
+<!-- FAQ Section -->
+<section id="gyik" class="scroll-mt-10 py-24 px-4 bg-gray-50">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">GYIK</h2>
+    <div class="space-y-4">
+      <!-- FAQ 1 -->
+      <div class="border rounded-lg">
+        <button class="w-full flex justify-between items-center px-4 py-3 font-semibold hover:bg-gray-100 transition" data-toggle="faq1">
+          Mikor érdemes minket bevonni?
+          <svg class="w-5 h-5 transform transition-transform duration-100" data-icon="faq1" xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div id="faq1" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-4 pb-0 text-gray-700">
+          Ha új funkciókat vezetsz be, élesítés előtt állsz, vagy szeretnél biztosra menni, hogy minden rendben működik.
+        </div>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="border rounded-lg">
+        <button class="w-full flex justify-between items-center px-4 py-3 font-semibold hover:bg-gray-100 transition" data-toggle="faq2">
+          Mit kapok pontosan egy audit után?
+          <svg class="w-5 h-5 transform transition-transform duration-100" data-icon="faq2" xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div id="faq2" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-4 pb-0 text-gray-700">
+          Strukturált hibajegyzéket képernyőképekkel, súlyozással, UX és PageSpeed megjegyzésekkel – könnyen értelmezhető formában.
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="border rounded-lg">
+        <button class="w-full flex justify-between items-center px-4 py-3 font-semibold hover:bg-gray-100 transition" data-toggle="faq3">
+          Nem vagyok technikai. Érteni fogom?
+          <svg class="w-5 h-5 transform transition-transform duration-100" data-icon="faq3" xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div id="faq3" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-4 pb-0 text-gray-700">
+          Igen. Emberi nyelven írunk. Nemcsak azt mondjuk el, mi a gond, hanem azt is, miért fontos foglalkozni vele.
+        </div>
+      </div>
+
+      <!-- FAQ 4 -->
+      <div class="border rounded-lg">
+        <button class="w-full flex justify-between items-center px-4 py-3 font-semibold hover:bg-gray-100 transition" data-toggle="faq4">
+          Mennyi idő alatt dolgoztok?
+          <svg class="w-5 h-5 transform transition-transform duration-100" data-icon="faq4" xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div id="faq4" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-4 pb-0 text-gray-700">
+          Audit csomagok: 48–72 óra. Partnerként heti sprinthez igazodva, megbízhatóan.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="kapcsolat" class="scroll-mt-10 py-24 px-4 bg-white border-t border-gray-100">
+  <div class="max-w-3xl mx-auto text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-6">Kérdésed van vagy ajánlatot kérnél?</h2>
+    <p class="text-gray-600 mb-10">Írj nekünk, és 1 munkanapon belül válaszolunk. Akár konkrét igénnyel, akár csak érdeklődésként is kereshetsz minket.</p>
+    
+    <form class="space-y-6" novalidate>
+      <!-- Név -->
+      <div>
+        <label for="name" class="block text-left font-medium mb-1">Név</label>
+        <input type="text" id="name" name="name"
+               class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-900" />
+        <p id="error-name" class="mt-1 text-sm text-red-600 hidden text-left">Kérjük, add meg a neved.</p>
+      </div>
+
+      <!-- Email -->
+      <div>
+        <label for="email" class="block text-left font-medium mb-1">Email cím</label>
+        <input type="email" id="email" name="email"
+               class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-900" />
+        <p id="error-email" class="mt-1 text-sm text-red-600 hidden text-left">Kérjük, érvényes email címet adj meg.</p>
+      </div>
+
+      <!-- Csomag kiválasztása -->
+      <div>
+        <label for="package" class="block text-left font-medium mb-1">Melyik csomag érdekel?</label>
+        <div class="relative">
+          <select id="package" name="package"
+                  class="appearance-none w-full border border-gray-300 rounded-lg px-4 py-3 pr-10 bg-white focus:outline-none focus:ring-2 focus:ring-gray-900">
+            <option value="" disabled selected>Válassz csomagot</option>
+            <option value="starter">Indulásbiztos</option>
+            <option value="standard">Rendbetesz</option>
+            <option value="partner">QA Partner</option>
+            <option value="unknown">Még nem tudom</option>
+          </select>
+          <div class="pointer-events-none absolute inset-y-0 right-3 flex items-center text-gray-500">
+            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </div>
+          <p id="error-package" class="mt-1 text-sm text-red-600 hidden text-left">Kérjük, válassz csomagot.</p>
+        </div>
+      </div>
+      <!-- Üzenet -->
+      <div>
+        <label for="message" class="block text-left font-medium mb-1">Üzenet</label>
+        <textarea id="message" name="message" rows="5"
+                  class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-gray-900"></textarea>
+        <p id="error-message" class="mt-1 text-sm text-red-600 hidden text-left">Kérjük, írd le röviden, miben segíthetünk.</p>
+      </div>
+
+      <!-- Gomb -->
+      <div>
+        <button type="submit"
+                class="w-full md:w-auto px-6 py-3 bg-gray-900 text-white rounded hover:bg-gray-700 transition">
+          Üzenet elküldése
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-50 border-t border-gray-200 mt-20">
+  <div class="max-w-7xl mx-auto px-4 py-10 flex flex-col md:flex-row justify-between items-start md:items-center text-sm text-gray-600 space-y-6 md:space-y-0">
+    
+    <!-- Bal oldal: logó és tagline -->
+    <div>
+      <div class="font-semibold text-gray-900 text-lg mb-1">Conilex</div>
+      <p>Minőségbiztosítás. Emberi nyelven.</p>
+    </div>
+
+    <!-- Középső rész: navigáció -->
+    <div class="flex space-x-6">
+      <a href="#miert" class="hover:text-gray-800">Miért mi?</a>
+      <a href="#csomagok" class="hover:text-gray-800">Csomagok</a>
+      <a href="#gyik" class="hover:text-gray-800">GYIK</a>
+      <a href="#kapcsolat" class="hover:text-gray-800">Kapcsolat</a>
+    </div>
+
+    <!-- Jobb oldal: copyright -->
+    <div class="text-gray-500">
+      © 2025 Conilex. Minden jog fenntartva.
+    </div>
+  </div>
+</footer>
+
+
+
+    
+
+    <script src="script.js"></script>
+  </body>
+</html>
