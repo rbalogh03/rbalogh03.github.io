@@ -151,13 +151,13 @@ form.addEventListener('submit', async function (e) {
             package: null
         }
         switch (fields.package.el.value) {
-            case 'starter':
-                message.package = 'Indulásbiztos';
+            case 'readycheck':
+                message.package = 'ReadyCheck';
                 break;
-            case 'standard':
-                message.package = 'Rendbetesz';
+            case 'deepcheck':
+                message.package = 'DeepCheck';
                 break;
-            case 'partner':
+            case 'qapartner':
                 message.package = 'QA Partner';
                 break;
             case 'unknown':
